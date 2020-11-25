@@ -4,7 +4,9 @@ import { Button } from 'reactstrap';
 import openSocket from "socket.io-client";
 import profile from '../../assets/images/profile.jpg';
 import hostImg from '../../assets/images/host-img.png';
-const ENDPOINT = "http://localhost:8000";
+// const ENDPOINT = "http://localhost:8000";
+const ENDPOINT = "https://xtralive.herokuapp.com";
+
 
 export default function Participant() {
   const socket = openSocket(ENDPOINT, { transports: ['websocket'] });
